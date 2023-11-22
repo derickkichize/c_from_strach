@@ -21,7 +21,7 @@ __x64_string=x64_string
 
 
  
-all: clean $(bin)
+all: always clean $(bin)
 
 $(bin): $(cfile) $(thx_io).o $(thx_string).o
 	$(cc) $(cflags)  $(cfile) $(lib_dir)/* $(obj_dir)/* -I $(inc_dir) -o $(bin)
@@ -37,6 +37,11 @@ $(__x64_io).o:
 
 $(__x64_string).o: 
 	$(asm) $(asmflags) $(asm_dir)/x86_64/$(__x64_string).s -o $(obj_dir)/$(__x64_string).o
+
+always:
+	mkdir -p src
+	mkdir -p obj
+
 
 clean:
 	rm -rf $(obj_dir)/*
