@@ -22,8 +22,8 @@ void thx_puts(char* s);
 #define PRINTF_ARGUMENT_STATE 1
 #define PRINTF_NORMAL_STATE   0
 
-void thx_printf(const char *fmt, ...);
-int  thx_sprintf(char *, const char *fmt, ...);
-int  thx_fprintf(unsigned int, const char *fmt, ...);
+void thx_printf (const char *fmt, ...);
+int  thx_sprintf(char*,           const char *fmt, ...);
+int  thx_fprintf(unsigned int,    const char *fmt, ...);
 
 #endif//_THXIO_H_

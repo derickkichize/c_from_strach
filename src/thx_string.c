@@ -22,6 +22,7 @@ atoi(char c)
 	return n; 
 }
 
+
 void
 ftoa(float n, char* buf, int pres)
 {
@@ -31,8 +32,13 @@ ftoa(float n, char* buf, int pres)
 	int d = (int) n;
 	float frac = d - (float) n;
 
+
 	while (pres != 0)
 	{ frac *= 10; pres--; }
+
+	memset(dec_buf,  0, (sizeof dec_buf));
+	memset(frac_buf, 0, (sizeof dec_buf));
+	memset(buf,      0, (sizeof buf));
 
 	int f = (unsigned int) frac * -1;
 	__x64_itoa((void*)(uintptr_t) d, dec_buf, radix);
