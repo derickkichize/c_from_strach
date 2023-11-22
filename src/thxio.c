@@ -1,5 +1,6 @@
 #include <thx_types.h>
-#include <thxio.h>
+#include <thx_io.h>
+#include <thx_syscall.h>
 
 void 
 thx_printf(const char *fmt, ...)
