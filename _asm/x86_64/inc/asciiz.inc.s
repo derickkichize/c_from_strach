@@ -84,3 +84,58 @@ usig_ito_asciiz:
 	mov rsp, rbp
 	pop rbp
 	ret
+
+; Converts an ascii value to an integer.
+ascizz_to_dec:
+	push rbp,
+	mov rbp, rsp
+
+	push rbx
+	push rsi
+	push r8
+	push rax
+
+	xor rsi, rsi
+	xor r8, r8
+	mov rbx, 10
+
+	cmp byte[rdi] , '-'
+	je .signed
+
+	jmp .loop
+
+.loop:
+	movzx rax, byte[rdi]
+	inc rdi 
+	sub al, '0'
+
+	cmp al, 0
+	jle .end
+
+	imul rsi, rbx
+	add rsi, rax
+	jmp .loop
+
+.signed:
+	inc rdi
+	mov r8, 1
+	jmp .loop
+
+.signum:
+	neg rax
+	jmp .return
+
+.end:
+	pop rax
+	mov rax, rsi
+
+	cmp r8, 1
+	je .signum
+.return
+	pop r8
+	pop rsi
+	pop rbx
+
+	mov rsp, rbp
+	pop rbp
+	ret

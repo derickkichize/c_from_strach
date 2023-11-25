@@ -2,7 +2,9 @@ asm=nasm
 asmflags=-f elf64
 
 cc=gcc
-cflags=-Wall -Wextra -z noexecstack -g
+no_warnopts=-Wno-unused-variable -Wno-sizeof-pointer-memaccess
+
+cflags=-Wall -Wextra -z execstack $(no_warnopts) -g
 
 asm_dir=_asm
 obj_dir=obj

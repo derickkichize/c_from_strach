@@ -29,9 +29,9 @@ ftoa(float n, char* buf, int pres)
 	char dec_buf[128];
 	char frac_buf[128];
 	int radix = 10;
+	int f;
 	int d = (int) n;
 	float frac = d - (float) n;
-
 
 	while (pres != 0)
 	{ frac *= 10; pres--; }
@@ -40,10 +40,13 @@ ftoa(float n, char* buf, int pres)
 	memset(frac_buf, 0, (sizeof dec_buf));
 	memset(buf,      0, (sizeof buf));
 
-	int f = (unsigned int) frac * -1;
+
+	if (frac < 0) f = (unsigned int) frac * -1;
+	else          f = (unsigned int) frac;
+
 	__x64_itoa((void*)(uintptr_t) d, dec_buf, radix);
 	__x64_itoa((void*)(uintptr_t) f, frac_buf, radix);
-	__x64_putsbuf((void*) buf, dec_buf);
-	__x64_putcbuf(buf, '.');
-	__x64_putsbuf((void*) buf, frac_buf);
+	__x64_memcats((void*) buf, dec_buf);
+	__x64_memcatc(buf, '.');
+	__x64_memcats((void*) buf, frac_buf);
 }
