@@ -1,4 +1,4 @@
-# C From strach
+# C From scratch
 
 ### Motivation:
 
