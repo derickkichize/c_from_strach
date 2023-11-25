@@ -11,7 +11,7 @@ This are simple implementations that i'm sharing with you so don't expect to see
 * no use of stdlib
 * no use of libc
 
-### C methods from strach
+### C methods from scratch
 
 - printf  (c)
 - sprintf (c)
