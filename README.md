@@ -5,7 +5,7 @@
 * no use of stdlib
 * no use of libc
 
-### *C methods from strach
+### C methods from strach
 
 - printf  (c)
 - sprintf (c)
@@ -15,7 +15,7 @@
 - memset  (asm)
 - atoi    (asm)
 
-### *Custom methods
+### Custom methods
 
 - memcats (asm)
 - memcatc (asm)
