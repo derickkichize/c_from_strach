@@ -2,9 +2,9 @@
 
 ### Motivation:
 
-When i was learning assembly, i notice that i have to implement some methods by myself.tl;dr
-So i started to create thease libs as prof of concept. thease are some things that i have been learning in NASM assembly and C.tl;dr
-This are simple implementations  that i'm sharing with the community don't expect to see professional things.tl;dr
+When i was learning assembly, i notice that i have to implement some methods by myself. <br>
+So i started to create thease libs as prof of concept. thease are some things that i have been learning in NASM assembly and C.<br>
+This are simple implementations  that i'm sharing with the community don't expect to see professional things.<br>
 
 ## an experimental implementation of C standard libs.
 
