@@ -4,5 +4,23 @@
 
 * no use of stdlib
 * no use of libc
-* some methods are implemented using nasm assembly.
-* others are implemented using just pure c features
+
+### *C methods from strach
+
+- printf  (c)
+- sprintf (c)
+- fprintf (c)
+- sscanf  (c)
+- strlen  (c)
+- memset  (asm)
+- atoi    (asm)
+
+### *Custom methods
+
+- memcats (asm)
+- memcatc (asm)
+- atoh    (asm)
+- atof    (asm)
+- itoa    (c)
+- ctoi    (c)
+- ftoa    (c)

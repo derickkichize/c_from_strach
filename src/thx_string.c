@@ -16,7 +16,7 @@ memset(void * dst, int c, size_t n)
 }
 
 int
-atoi(char c)
+ctoi(char c)
 { 
 	int n = c - '0'; 
 	return n; 

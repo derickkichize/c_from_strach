@@ -107,7 +107,7 @@ thx_printf_core(unsigned int fd, char* buf, const char *fmt, va_list ap)
 					break;
 				case '.':
 					++fmt;
-					f_pres = atoi(*fmt);
+					f_pres = ctoi(*fmt);
 					fmt--;
 					state = PRINTF_ARGUMENT_STATE;
 					break;

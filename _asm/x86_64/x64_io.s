@@ -208,5 +208,3 @@ __x64_atoi:
 	mov rsp, rbp
 	pop rbp
 	ret
-
-
