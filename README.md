@@ -1,6 +1,6 @@
 # C From strach
 
-### Intention
+### Motivation
 
 When i was learning assembly, i notice that i have to implement some methods by myself.
 So i started to create thease libs as prof of concept. thease are some things that i have been learning in NASM assembly and C.
