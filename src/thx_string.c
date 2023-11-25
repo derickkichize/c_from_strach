@@ -8,7 +8,6 @@ long unsigned int strlen(const char *s)
 	return i;
 }
 
-
 void* 
 memset(void * dst, int c, size_t n)
 {
@@ -21,7 +20,6 @@ ctoi(char c)
 	int n = c - '0'; 
 	return n; 
 }
-
 
 void
 ftoa(float n, char* buf, int pres)
