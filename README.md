@@ -2,7 +2,8 @@
 
 ### Motivation:
 
-When learning assembly you have to implement some methods by yourself. <br>
+When you develop in assembly sometimes it's necessery to implement auxiliary methods by yourself.<br>
+Things like: printing, converting data types and extract data from strings.<br>
 So i started to create thease libs for practice.<br> 
 This are simple implementations that i'm sharing with you so don't expect to see great things.<br>
 
