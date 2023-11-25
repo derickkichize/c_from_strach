@@ -36,8 +36,9 @@ This are simple implementations that i'm sharing with you so don't expect to see
 #### Observation:
     *Don't use it in production!*
     Just for learning purpose edit the make file and add your own source file.
-    For now the project was not compiled as shared libs so you i have to link all together as a single binary.
+    For now the project was not compiled as shared libs so you have to link all together as a single binary.
 #### Usage:
+
    
 ```c
 #include <thx_io.h>
