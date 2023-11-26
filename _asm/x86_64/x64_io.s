@@ -79,9 +79,6 @@ __x64_atoh:
 	pop rbp
 	ret
 
-
-	
-
 ;;
 ; atof converts ascii string in to a float.    
 ;
@@ -191,6 +188,7 @@ __x64_itoa:
 	mov rsp, rbp
 	pop rbp
 	ret
+
 ;;
 ; atoi converts an ascii value to an integer
 ;

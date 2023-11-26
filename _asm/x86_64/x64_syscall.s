@@ -27,6 +27,3 @@ __x64_syswrite:
 	mov rsp, rbp
 	pop rbp
 	ret
-	
-
-

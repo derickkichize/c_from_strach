@@ -42,7 +42,6 @@ usig_ito_asciiz:
 	push rbx
 	push rcx
 	push rdx
-
 	cmp rbx, 2
 	jge .setup
 
